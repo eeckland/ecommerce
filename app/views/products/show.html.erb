@@ -6,7 +6,9 @@
 </p>
 
 <p>
-  <%= image_tag @product.image_url %>
+  <% if product.image.url.nil? == false %>
+  <%= image_tag @product.image_url, alt: "product image" %>
+  <% end %>
 </p>
 
 <p>
