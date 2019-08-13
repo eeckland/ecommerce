@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.3'
+gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
 # CUSTOM GEMS
 gem 'bootstrap-sass'
 gem 'font-awesome-rails'
