@@ -17,4 +17,5 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
   #routes: directory of every single mailing address in the country
   get 'categorical' => 'storefront#items_by_category'
+  get 'branding' => 'storefront#items_by_brand'
 end

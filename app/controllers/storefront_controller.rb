@@ -12,7 +12,7 @@ class StorefrontController < ApplicationController
   end
 
   def items_by_brand
-  	@products = Product.where(brand_id: params[:brand_id]) #select products where brand_id =
-  	@categories = Category.find(params[:brand_id]) #select Brand where brand id =
+  	@products = Product.where(brand: params[:brand]) #select products where brand_id =
+  	@brand = params[:brand] #select Brand where brand id =
   end
 end
